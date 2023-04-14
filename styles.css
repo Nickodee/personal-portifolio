@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 17px;
+    background: white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+#navbar .nav-list {
+    display: flex;
+    gap: 10px;
+    float: right;
+}
+
+#navbar .nav-list a {
+    color: black;
+    text-decoration: none;
+}
+
+#navbar .nav-list a:hover {
+    color: aqua;
+}
+
+#navbar .nav-list li {
+    list-style-type: none;
+}
+
+#welcome-section {
+    padding-top: 20px;
+    margin-top: 52px;
+    text-align: center;
+    margin-bottom: 30px;
+    height: 100vh;
+    background: rgb(196, 196, 196);
+}
+
+.welcome-section {
+    font-size: 1.5rem;
+}
+
+#projects .projects-section-header {
+    text-align: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-grid div img {
+    object-fit: cover;
+    width: 350px;
+    height: 400px;
+}
+
+.projects-grid div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-grid div .project-tile {
+    background: rgb(61, 61, 61);
+    text-align: center;
+    color: white;
+    padding: 17px;
+    text-decoration: none;
+    border-bottom: none;
+    margin-top: -4px;
+}
+
+#projects .btn-btn-show-all {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: blueviolet;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 120px;
+}
+
+#projects .btn-btn-show-all:hover {
+    background: red;
+}
+
+#contact {
+    background: rgb(140, 140, 140);
+    padding: 40px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#contact .contact-section-header {
+    margin-bottom: 10px;
+}
+
+#contact a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#contact a:hover {
+    color: aqua;
+}
+
+footer hr {
+    background: red;
+    height: 3px;
+    border: none;
+    margin-bottom: 5px;
+}
+
+footer {
+    background: rgb(140, 140, 140);
+    text-align: center;
+    padding-bottom: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width:950px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 8px;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .projects-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 8px;
+    }
+}
